@@ -1,0 +1,54 @@
+@supports(grid-area:auto) {
+  .site {
+    display: grid;
+    /* Divides screen into fractions by columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Divides screen into fractions by row */
+    grid-template-rows: 150px 100px 500px 50px;
+    /* Organizes grid area */
+    grid-template-areas: 'menu menu menu menu' 'pgtitle pgtitle pgtitle pgtitle' 'side main main main' 'foot foot foot foot';
+  }
+  .menu {
+    /* Starting at the beginning all the way across */
+    grid-column: 1/5;
+    background: pink;
+  }
+  .pagetitle {
+    /* Starting at the beginning all the way across*/
+    grid-column: 1/5;
+    /* Could also use "pgtitle" */
+    background: yellow;
+  }
+  .sidebar {
+    /* Starting at the beginning, up to position 2 */
+    grid-column: 1/2;
+    background: beige;
+  }
+  .main {
+    /* Starting at position 2, up to end*/
+    grid-column: 2/5;
+    background: purple;
+  }
+  .footer {
+    /* Starting at the beginning all the way across*/
+    grid-column: 1/5;
+    /* Could also use "foot" */
+    background: green;
+  }
+  /* Responsiveness */
+  /* 767px = tablet */
+  @media screen and (max-width:767px) {
+    .site {
+      grid-template-areas: 'head head head head' 'nav nav nav nav' 'side side side side' 'main main main main' 'foot foot foot foot';
+    }
+    /* Reorder main to appear above sidebar */
+    .sidebar {
+      grid-column: main;
+      grid-row: main;
+    }
+    .main {
+      grid-column: side;
+      grid-row: side;
+    }
+  }
+}
