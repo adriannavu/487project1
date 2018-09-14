@@ -1,16 +1,16 @@
-
 @supports(grid-area:auto) {
   .grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 5px;
-  background-color: gray;
-}
-.grid-container>div {
-  background-color: white;
-  text-align: center;
-}
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    background-color: white;
+  }
+
+  .grid-container>div {
+    background-color: purple;
+    text-align: left;
+  }
 }
 
 /* Responsiveness
@@ -18,69 +18,72 @@
 [class*="col-"] {
   width: 100%;
 }
+
 @media only screen and (min-width: 768px) {
-/* For desktop: */
-@supports(grid-area:auto) {
-  .grid-container {
-  display: grid;
-  grid-template-columns: 10% 30% 50% 10%;
-  grid-template-rows: 155px 100px 75px 200px 75px 100px 75px 75px 75px;
-  grid-gap: 5px;
-  background-color: gray;
-}
 
-.grid-container>div {
-  background-color: white;
-  text-align: center;
-}
-.menu {
-  grid-row: 1/1;
-  grid-column: 1/5;
-}
+  /* For desktop: */
+  @supports(grid-area: auto) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 10% 30% 50% 10%;
+      grid-template-rows: 155px 100px 75px 200px 75px 100px 75px 75px 75px;
+      grid-gap: 5px;
+      background-color: white;
+    }
 
-.dashboard {
-  grid-row: 2/2;
-  grid-column: 1/5;
-}
+    .grid-container>div {
+      background-color: purple;
+      text-align: center;
+    }
 
-.announcements {
-  grid-row: 3/3;
-  grid-column: 1/5;
-}
+    .menu {
+      grid-row: 1/1;
+      grid-column: 1/5;
+    }
 
-.tasks {
-  grid-row: 4/4;
-  grid-column: 2/2;
-}
+    .dashboard {
+      grid-row: 2/2;
+      grid-column: 1/5;
+    }
 
-.recs {
-  grid-row: 5/8;
-  grid-column: 2/2;
-}
+    .announcements {
+      grid-row: 3/3;
+      grid-column: 1/5;
+    }
 
-.analytics {
-  grid-row: 4/6;
-  grid-column: 3/3;
-}
+    .tasks {
+      grid-row: 4/4;
+      grid-column: 2/2;
+    }
 
-.contactscustomers {
-  grid-row: 6/6;
-  grid-column: 3/3;
-}
+    .recs {
+      grid-row: 5/8;
+      grid-column: 2/2;
+    }
 
-.didyouknow {
-  grid-row: 7/7;
-  grid-column: 3/3;
-}
+    .analytics {
+      grid-row: 4/6;
+      grid-column: 3/3;
+    }
 
-.promo {
-  grid-row: 8/8;
-  grid-column: 2/4;
-}
+    .contactscustomers {
+      grid-row: 6/6;
+      grid-column: 3/3;
+    }
 
-.statusbar {
-  grid-row: 9/9;
-  grid-column: 1/5;
-}
-}
+    .didyouknow {
+      grid-row: 7/7;
+      grid-column: 3/3;
+    }
+
+    .promo {
+      grid-row: 8/8;
+      grid-column: 2/4;
+    }
+
+    .statusbar {
+      grid-row: 9/9;
+      grid-column: 1/5;
+    }
+  }
 }
