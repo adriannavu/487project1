@@ -3,14 +3,15 @@ body {
   font-family: myriad-pro;
   line-height: 1.2;
   text-align: left;
-  font-weight: normal;
 }
 
 h1 {
   font-size: 32px;
   color: rgb(36, 152, 244);
   line-height: 1.2;
+  font-weight: normal;
   position: absolute;
+  margin: 0;
 }
 
 p {
@@ -41,9 +42,9 @@ p {
     /************************** For desktop **************************/
     .grid-container {
       display: grid;
-      grid-template-columns: 110px 30% 50% 110px;
-      grid-template-rows: 155px 75px 75px 200px 75px 100px 75px 75px 75px;
-      grid-gap: 5px;
+      grid-template-columns: 100px 355px 615px 100px;
+      grid-template-rows: 155px 105px 75px 200px 75px 100px 75px 75px 75px;
+      grid-gap: 1px;
       background-color: purple;
     }
 
@@ -94,51 +95,57 @@ p {
       grid-column: 2/4;
     }
 
-    .dashboard-bkgd {
+    .dashboard-green {
       background-color: rgb(51, 204, 102);
       border-radius: 5px;
-      position: absolute;
+      margin: 15px auto 15px auto;
       left: 110px;
       top: 170px;
       width: 960px;
       height: 75px;
+      z-index: 281;
     }
 
     .dashboard h1 {
-      color: white;
-      padding-left: 1rem;
+      font-size: 36px;
+      color: rgb(255, 255, 255);
+      left: 130px;
+      top: 195px;
     }
 
-    .search-bar {
-      background-color: rgb(244, 244, 244);
+    .search-bar input[type=text] {
+      background-color: #f4f4f4;
       position: absolute;
-      left: 797px;
-      top: 191px;
-      width: 258px;
-      height: 33px;
-      z-index: 285;
+      padding-left: 10px;
+      font-size: 16px;
+      border: 1px solid #2db55b;
+      border-radius: 4px;
+      left: 801px;
+      top: 200px;
+      width: 246px;
+      height: 32px;
     }
 
     .mglass {
       position: absolute;
       display: inline-block;
-      background: rgb(244, 244, 244);
+      background-color: #f4f4f4;
       border-radius: 30px;
-      height: 9px;
-      width: 9px;
-      border: 3px solid rgb(36, 152, 244);
-      left: 1023px;
-      top: 197px;
+      height: 13px;
+      width: 13px;
+      border: 3.1px solid #2498f4;
+      left: 1027px;
+      top: 207px;
     }
 
     .mglass-handle {
       position: absolute;
       display: inline-block;
-      height: 3px;
-      width: 5px;
-      background: rgb(36, 152, 244);
-      top: 210px;
-      left: 1035px;
+      height: 3.5px;
+      width: 7px;
+      background: #2498f4;
+      top: 224px;
+      left: 1043px;
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
