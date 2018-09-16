@@ -7,7 +7,7 @@ body {
 
 h1 {
   font-size: 32px;
-  color: rgb(36, 152, 244);
+  color: #2498f4;
   line-height: 1.2;
   font-weight: normal;
   position: absolute;
@@ -16,6 +16,7 @@ h1 {
 
 p {
   font-size: 14px;
+  position: absolute;
 }
 
 /************************** For mobile **************************/
@@ -24,7 +25,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-gap: 5px;
+    grid-gap: 1px;
     background-color: purple;
   }
 
@@ -61,18 +62,19 @@ p {
 
     .menu p {
       font-size: 14px;
-      font-family: "Proxima Nova";
+      font-family: proxima-nova;
       color: rgb(255, 255, 255);
       font-weight: bold;
       line-height: 1.2;
       text-align: right;
-      position: absolute;
+      left: 888px;
+      top: 3px;
     }
 
     .menu-top-bar {
-      background-image: -moz-linear-gradient(-90deg, rgb(36, 152, 244) 0%, rgb(29, 133, 216) 100%);
-      background-image: -webkit-linear-gradient(-90deg, rgb(36, 152, 244) 0%, rgb(29, 133, 216) 100%);
-      background-image: -ms-linear-gradient(-90deg, rgb(36, 152, 244) 0%, rgb(29, 133, 216) 100%);
+      background-image: -moz-linear-gradient(-90deg, #2190e8 0%, #2190e8 100%);
+      background-image: -webkit-linear-gradient(-90deg, #2190e8 0%, #2190e8 100%);
+      background-image: -ms-linear-gradient(-90deg, #2190e8 0%, #2190e8 100%);
       position: absolute;
       left: 0px;
       top: 0px;
@@ -81,12 +83,153 @@ p {
       z-index: -1;
     }
 
-    .marker {
-      width: 0;
-      height: 0;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-bottom: 10px solid white;
+    .spacer1 {
+      background-color: rgb(28, 133, 216);
+      position: absolute;
+      left: 997px;
+      top: 8px;
+      width: 1px;
+      height: 30px;
+    }
+
+    .menu-icon-help {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      left: 1010px;
+      top: 14px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .spacer2 {
+      background-color: rgb(28, 133, 216);
+      position: absolute;
+      left: 1042px;
+      top: 8px;
+      width: 1px;
+      height: 30px;
+    }
+
+    .menu-icon-settings {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      left: 1056px;
+      top: 14px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .menu-navy {
+      background-image: -moz-linear-gradient(-90deg, rgb(19, 70, 112) 0%, rgb(19, 70, 112) 100%);
+      background-image: -webkit-linear-gradient(-90deg, rgb(19, 70, 112) 0%, rgb(19, 70, 112) 100%);
+      background-image: -ms-linear-gradient(-90deg, rgb(19, 70, 112) 0%, rgb(19, 70, 112) 100%);
+      position: absolute;
+      left: 0px;
+      top: 45px;
+      width: 1200px;
+      height: 110px;
+      z-index: 3;
+    }
+
+    .menu-pattern {
+      opacity: 0.031;
+      position: absolute;
+      left: 0px;
+      top: 45px;
+      width: 1200px;
+      height: 75px;
+      z-index: 4;
+      opacity: inherit;
+    }
+
+    .menu-multiple-gradients {
+      position: absolute;
+      left: 131px;
+      top: 45px;
+      width: 927px;
+      height: 110px;
+      z-index: 5;
+    }
+
+    .menu-fade-left {
+      position: absolute;
+      left: 0px;
+      top: 45px;
+      width: 300px;
+      z-index: 7;
+    }
+
+    .menu-fade-right {
+      position: absolute;
+      left: 900px;
+      top: 45px;
+      width: 300px;
+      height: 110px;
+      z-index: 6;
+    }
+
+    .menu-icon-dashboard {
+      position: absolute;
+      left: 346px;
+      top: 66px;
+      width: 56px;
+      height: 56px;
+      z-index: 8;
+    }
+
+    .menu-icon-customers {
+      position: absolute;
+      left: 435px;
+      top: 75px;
+      width: 60px;
+      height: 40px;
+      z-index: 8;
+    }
+
+    .menu-icon-messages {
+      position: absolute;
+      left: 525px;
+      top: 74px;
+      width: 55px;
+      height: 46px;
+      z-index: 8;
+    }
+
+    .menu-icon-promotions {
+      position: absolute;
+      left: 619px;
+      top: 70px;
+      width: 48px;
+      height: 48px;
+      z-index: 8;
+    }
+
+    .menu-icon-page-creator {
+      position: absolute;
+      left: 714px;
+      top: 69px;
+      width: 43px;
+      height: 48px;
+      z-index: 8;
+    }
+
+    .menu-icon-analytics {
+      position: absolute;
+      left: 803px;
+      top: 73px;
+      width: 40px;
+      height: 48px;
+      z-index: 8;
+    }
+
+    .menu-marker {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      left: 354px;
+      top: 146px;
+      width: 40px;
+      height: 10px;
+      z-index: 293;
     }
 
     /* Dashboard */
