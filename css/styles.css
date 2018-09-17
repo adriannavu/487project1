@@ -23,6 +23,8 @@ h2 {
 p {
   font-size: 14px;
   position: absolute;
+  font-weight: normal;
+  margin: 0;
 }
 
 /************************** For mobile **************************/
@@ -90,7 +92,7 @@ p {
       position: absolute;
       left: 0px;
       top: 0px;
-      width: 100%;
+      width: 1200px;
       height: 45px;
       z-index: -1;
     }
@@ -131,7 +133,7 @@ p {
       height: 20px;
     }
 
-    .menu-navy {
+    .menu-bkgd {
       background-image: -moz-linear-gradient(-90deg, rgb(19, 70, 112) 0%, rgb(19, 70, 112) 100%);
       background-image: -webkit-linear-gradient(-90deg, rgb(19, 70, 112) 0%, rgb(19, 70, 112) 100%);
       background-image: -ms-linear-gradient(-90deg, rgb(19, 70, 112) 0%, rgb(19, 70, 112) 100%);
@@ -250,7 +252,7 @@ p {
       grid-column: 2/4;
     }
 
-    .dashboard-green {
+    .dashboard-bkgd {
       background-color: rgb(51, 204, 102);
       border-radius: 5px;
       margin: 15px auto 15px auto;
@@ -284,8 +286,9 @@ p {
       position: absolute;
       top: 1px;
       left: 1px;
-      width: 256.5px;
-      height: 32px;
+      width: 215.5px;
+      height: 34px;
+      padding: 0 33px 0 10px;
       z-index: 1;
       border: none;
       border-radius: 4px;
@@ -323,11 +326,66 @@ p {
       grid-column: 2/4;
     }
 
-    .announcements p {
+    .announcements-bkgd {
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+      display: block;
+      margin: 14px auto 0 auto;
+      width: 940px;
+      height: 50px;
+      z-index: -1;
+    }
+
+    .announcements-title {
+      text-transform: uppercase;
       color: rgb(254, 127, 19);
       position: absolute;
-      left: 138.937px;
-      top: 308.65px;
+      left: 153px;
+      top: 293px;
+    }
+
+    .announcements-spacer1 {
+      background-color: rgb(238, 238, 238);
+      position: absolute;
+      left: 300px;
+      top: 275px;
+      width: 1px;
+      height: 50px;
+      z-index: 275;
+    }
+
+    .announcements-desc {
+      font-size: 14px;
+      font-family: "Myriad Pro";
+      color: rgb(119, 119, 119);
+      line-height: 1.2;
+      text-align: left;
+      position: absolute;
+      left: 317px;
+      top: 293px;
+      z-index: 274;
+    }
+
+    .announcements-spacer2 {
+      background-color: rgb(238, 238, 238);
+      position: absolute;
+      left: 995px;
+      top: 275px;
+      width: 1px;
+      height: 50px;
+      z-index: 273;
+    }
+
+    .announcements-left-button-navigation {
+      position: absolute;
+      top: 291px;
+      left: 1010px;
+    }
+
+    .announcements-right-button-navigation {
+      position: absolute;
+      top: 291px;
+      left: 1038px;
     }
 
     /* Tasks */
