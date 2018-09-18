@@ -97,7 +97,7 @@ p {
     font-weight: lighter;
     color: rgb(255, 255, 255);
     z-index: 1;
-    top: 8px;
+    top: 3px;
     left: 10%;
   }
 
@@ -178,50 +178,32 @@ p {
     position: relative;
     top: -171px;
     z-index: 8;
+    width: 33em;
+    height: 5em;
+    margin: 0 auto 0 auto;
   }
 
-  .menu-icon-dashboard {
+  .nav {
+    margin: 0 1em 0 1em;
     position: relative;
-    left: 30%;
   }
 
-  .menu-icon-customers {
-    position: relative;
-    left: 32%;
-  }
-
-  .menu-icon-messages {
-    position: relative;
-    left: 34.5%;
-  }
-
-  .menu-icon-promotions {
-    position: relative;
-    left: 37%;
-  }
-
-  .menu-icon-page-creator {
-    position: relative;
-    left: 40%;
-  }
-
-  .menu-icon-analytics {
-    position: relative;
-    left: 43.5%;
+  .menu-shadow-container {
+    width: 35em;
   }
 
   .menu-icon-shadow {
     position: relative;
-    left: 29%;
-    margin: 0 1.1% 0 1.1%;
+    margin: 0 0.86rem 0 0.86em;
   }
 
   .menu-marker {
     position: relative;
-    left: 30.5%;
+    left: 1.5em;
     width: 40px;
     height: 10px;
     z-index: 3;
+    top: -3px;
   }
 
   /* Dashboard */
@@ -1034,6 +1016,23 @@ p {
 
     [class*="col-"] {
       width: 100%;
+    }
+
+    /* Menu */
+    .menu h2 {
+      left: 1%;
+    }
+
+    .menu-options {
+      left: 6.7%;
+    }
+
+    .menu-icon-container {
+      width: 100%;
+    }
+
+    .nav {
+      margin: 0 0.38em 0 0.38em;
     }
 
     /* Dashboard */
