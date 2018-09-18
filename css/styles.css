@@ -1,11 +1,11 @@
 /************************** Text **************************/
 body {
   font-family: myriad-pro;
-  line-height: 1.2;
   text-align: left;
 }
 
 h1 {
+  display: inline-block;
   font-size: 32px;
   color: #2498f4;
   font-weight: normal;
@@ -14,13 +14,15 @@ h1 {
 }
 
 h2 {
+  display: inline-block;
   font-size: 24px;
   position: relative;
-  font-weight: lighter;
+  font-weight: normal;
   margin: 0;
 }
 
 p {
+  display: inline-block;
   font-size: 14px;
   position: relative;
   font-weight: normal;
@@ -46,7 +48,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    background-color: purple;
+    background-color: white;
   }
 
   .grid-container>div {
@@ -63,9 +65,9 @@ p {
     /************************** For desktop **************************/
     .grid-container {
       display: grid;
-      grid-template-columns: minmax(111px, 10%) minmax(355px, 30%) minmax(615px, 50%) minmax(111px, 10%);
+      grid-template-columns: minmax(105px, 10%) minmax(355px, 30%) minmax(615px, 50%) minmax(105px, 10%);
       grid-template-rows: 147px 120px 50px 300px 104px 271px 180px 160px 61px;
-      background-color: purple;
+      background-color: white;
     }
 
     .grid-container>div {
@@ -93,6 +95,7 @@ p {
     }
 
     .menu h2 {
+      font-weight: lighter;
       color: rgb(255, 255, 255);
       margin-left: 5em;
       z-index: 1;
@@ -101,8 +104,8 @@ p {
 
     .menu p {
       color: rgb(255, 255, 255);
-      top: -13px;
-      left: 74.5%;
+      top: 8px;
+      left: 53.5%;
       z-index: 2;
     }
 
@@ -115,14 +118,13 @@ p {
     }
 
     .menu-vd1 {
-      top: -37px;
+      top: -23px;
       left: 82.9%;
     }
 
     .menu-icon-help {
-      background-color: rgb(255, 255, 255);
       position: relative;
-      top: -62px;
+      top: -46px;
       width: 20px;
       height: 20px;
       left: 84.1%;
@@ -130,14 +132,13 @@ p {
     }
 
     .menu-vd2 {
-      top: -91px;
+      top: -77px;
       left: 86.9%;
     }
 
     .menu-icon-settings {
-      background-color: rgb(255, 255, 255);
       position: relative;
-      top: -116px;
+      top: -100px;
       width: 20px;
       height: 20px;
       left: 88.1%;
@@ -185,7 +186,7 @@ p {
     .menu-fade-right {
       position: absolute;
       top: 0px;
-      left: 78%;
+      left: 75%;
       width: 300px;
       height: 110px;
     }
@@ -237,7 +238,6 @@ p {
     }
 
     .menu-marker {
-      background-color: rgb(255, 255, 255);
       position: relative;
       left: 354px;
       top: 131px;
@@ -346,48 +346,37 @@ p {
       text-transform: uppercase;
       color: rgb(254, 127, 19);
       position: relative;
-      margin: 15px;
+      padding: 15px;
     }
 
-    .announcements-vd1 {
+    /* .announcements-vd1 {
       left: 159px;
       top: -48px;
       height: 50px;
-    }
-
+    } */
     .announcements-desc {
       font-size: 14px;
-      font-family: "Myriad Pro";
       color: rgb(119, 119, 119);
       text-align: left;
       position: relative;
-      left: 175px;
-      top: -80px;
       width: 650px;
-      margin: 0;
     }
 
     .announcements-buttons {
       position: relative;
-      top: -113px;
-      height: 50px;
+      display: inline-block;
     }
 
-    .announcements-vd2 {
+    /* .announcements-vd2 {
       height: 50px;
       left: 92%;
-    }
-
+    } */
     .announcements-left-button {
       position: relative;
-      top: -37px;
-      left: 93.5%;
     }
 
     .announcements-right-button {
       position: relative;
-      top: -37px;
-      left: 94%;
     }
 
     /* Tasks */
@@ -397,28 +386,70 @@ p {
     }
 
     .tasks h1 {
-      left: 141.435px;
-      top: 378.354px;
+      padding: 15px 200px 15px 20px;
+      width: 80px;
     }
 
     .tasks-icon-settings {
-      background-color: rgb(153, 153, 153);
       position: relative;
-      left: 421px;
-      top: 350px;
-      width: 20px;
-      height: 20px;
+    }
+
+    .tasks div {
+      border-bottom: 1px solid rgb(238, 238, 238);
+    }
+
+    .tasks>div:hover {
+      filter: grayscale(100%);
+    }
+
+    .welcome-contacts h2 {
+      padding-right: 55px;
+    }
+
+    .provide-responses h2 {
+      padding-right: 54px;
+    }
+
+    .review-activity h2 {
+      padding-right: 84px;
+    }
+
+    .reach-out h2 {
+      padding-right: 128px;
     }
 
     .number-circle {
+      display: inline-block;
       border-radius: 50%;
       width: 24px;
       height: 24px;
-      padding: 10px;
       background: rgb(50, 204, 102);
       color: rgb(255, 255, 255);
       text-align: center;
       font-size: 18px;
+      margin: 16px;
+    }
+
+    .tasks h2 {
+      display: inline;
+      font-size: 21px;
+      font-family: myriad-pro;
+      color: rgb(36, 152, 243);
+    }
+
+    .tasks-stats {
+      display: inline-block;
+      border: 1px solid rgb(238, 238, 238);
+      border-radius: 5px;
+      padding: 4px 4px 0px 6px;
+    }
+
+    .tasks p {
+      font-size: 18px;
+      color: rgb(36, 152, 243);
+      padding: 0 5px 0 5px;
+      top: -4px;
+      width: 20px;
     }
 
     /* Recommendations */
