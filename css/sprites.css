@@ -21,384 +21,386 @@
 
 .spritesheet {
   background-position: -1px -0px;
-  width: 1208px;
-  height: 2531px;
+  width: 1210px;
+  height: 6386px;
 }
 
 .menu-pattern {
-  background-position: -1px -2532px;
+  background-position: -1px -6387px;
   width: 1200px;
   height: 75px;
 }
 
 .statusbar-gradient {
-  background-position: -1px -2608px;
+  background-position: -1px -6463px;
   width: 1200px;
   height: 10px;
 }
 
 .menu-multiple-gradients {
-  background-position: -1px -2619px;
+  background-position: -1px -6474px;
   width: 927px;
   height: 110px;
 }
 
 .analytics-bar-graph {
-  background-position: -1px -2730px;
+  background-position: -1px -6585px;
   width: 420px;
   height: 187px;
 }
 
 .analytics-bar-graph-mobile {
-  background-position: -422px -2730px;
+  background-position: -422px -6585px;
   width: 315px;
   height: 140px;
 }
 
 .menu-fade-left {
-  background-position: -738px -2730px;
+  background-position: -738px -6585px;
   width: 299px;
   height: 110px;
 }
 
 .menu-fade-right {
-  background-position: -738px -2841px;
+  background-position: -738px -6696px;
   width: 298px;
   height: 110px;
 }
 
 .promo-center-graphic {
-  background-position: -422px -2871px;
+  background-position: -422px -6726px;
   width: 268px;
   height: 171px;
 }
 
 .promo-left-graphic {
-  background-position: -1px -2918px;
+  background-position: -1px -6773px;
   width: 239px;
   height: 150px;
 }
 
 .promo-right-graphic {
-  background-position: -691px -2952px;
+  background-position: -691px -6807px;
   width: 225px;
   height: 160px;
 }
 
 .contactscustomers-gray-graph-line {
-  background-position: -929px -2619px;
+  background-position: -929px -6474px;
   width: 190px;
   height: 47px;
 }
 
 .contactscustomers-green-graph-line {
-  background-position: -929px -2667px;
+  background-position: -929px -6522px;
   width: 190px;
   height: 47px;
 }
 
 .contactscustomers-orange-graph-line {
-  background-position: -917px -2952px;
+  background-position: -917px -6807px;
   width: 190px;
   height: 47px;
 }
 
 .contactscustomers-shaded-graph {
-  background-position: -917px -3000px;
+  background-position: -917px -6855px;
   width: 190px;
   height: 63px;
 }
 
 .analytics-channels {
-  background-position: -1120px -2619px;
+  background-position: -1120px -6474px;
   width: 80px;
   height: 101px;
 }
 
 .analytics-referrals {
-  background-position: -1038px -2730px;
+  background-position: -1038px -6585px;
   width: 80px;
   height: 101px;
 }
 
 .contactscustomers-gray-avatar {
-  background-position: -1119px -2730px;
+  background-position: -1119px -6585px;
   width: 78px;
   height: 82px;
 }
 
 .contactscustomers-green-avatar {
-  background-position: -1119px -2813px;
+  background-position: -1119px -6668px;
   width: 78px;
   height: 82px;
 }
 
 .contactscustomers-orange-avatar {
-  background-position: -1038px -2832px;
+  background-position: -1038px -6687px;
   width: 78px;
   height: 82px;
 }
 
 .menu-icon-customers {
-  background-position: -1117px -2896px;
+  background-position: -1117px -6751px;
   width: 62px;
   height: 42px;
 }
 
-.menu-icon-customers-active {
-  background-position: -241px -2918px;
+.menu-icon-customers:hover {
+  background-position: -241px -6773px;
   width: 62px;
   height: 42px;
 }
 
 .menu-icon-shadow {
-  background-position: -929px -2715px;
+  background-position: -929px -6570px;
   width: 60px;
   height: 5px;
 }
 
 .menu-icon-dashboard {
-  background-position: -304px -2918px;
+  background-position: -304px -6773px;
   width: 58px;
   height: 58px;
 }
 
-.menu-icon-dashboard-active {
-  background-position: -363px -2918px;
+.menu-icon-dashboard:hover {
+  background-position: -363px -6773px;
   width: 58px;
   height: 58px;
 }
 
 .menu-icon-messages {
-  background-position: -1108px -2952px;
+  background-position: -1108px -6807px;
   width: 57px;
   height: 48px;
 }
 
-.menu-icon-messages-active {
-  background-position: -241px -2961px;
+.menu-icon-messages:hover {
+  background-position: -241px -6816px;
   width: 57px;
   height: 48px;
 }
 
 .menu-icon-promotions {
-  background-position: -299px -2977px;
+  background-position: -299px -6832px;
   width: 50px;
   height: 50px;
 }
 
-.menu-icon-promotions-active {
-  background-position: -350px -2977px;
+.menu-icon-promotions:hover {
+  background-position: -350px -6832px;
   width: 50px;
   height: 50px;
 }
 
 .menu-icon-page-creator {
-  background-position: -691px -2871px;
+  background-position: -691px -6726px;
   width: 45px;
   height: 50px;
 }
 
-.menu-icon-page-creator-active {
-  background-position: -1108px -3001px;
+.menu-icon-page-creator:hover {
+  background-position: -1108px -6856px;
   width: 45px;
   height: 50px;
 }
 
 .menu-icon-analytics {
-  background-position: -1166px -2952px;
+  background-position: -1166px -6807px;
   width: 42px;
   height: 50px;
 }
 
-.menu-icon-analytics-active {
-  background-position: -1154px -3003px;
+.menu-icon-analytics:hover {
+  background-position: -1154px -6858px;
   width: 42px;
   height: 50px;
 }
 
 .menu-marker {
-  background-position: -990px -2715px;
+  background-position: -990px -6570px;
   width: 40px;
   height: 10px;
 }
 
 .statusbar-avatar {
-  background-position: -1037px -2915px;
+  background-position: -1180px -6751px;
   width: 30px;
   height: 30px;
 }
 
 .analytics-checkmark {
-  background-position: -1180px -2896px;
+  background-position: -1037px -6770px;
   width: 22px;
   height: 21px;
 }
 
 .announcements-left-button {
-  background-position: -1068px -2915px;
+  background-position: -1060px -6770px;
   width: 22px;
   height: 22px;
 }
 
 .announcements-right-button {
-  background-position: -1091px -2915px;
+  background-position: -1083px -6770px;
   width: 22px;
   height: 22px;
 }
 
 .didyouknow-left-semicircle {
-  background-position: -241px -3010px;
+  background-position: -241px -6865px;
   width: 22px;
   height: 50px;
 }
 
 .didyouknow-right-semicircle {
-  background-position: -264px -3010px;
+  background-position: -264px -6865px;
   width: 22px;
   height: 50px;
 }
 
 .recs-checklist-icon {
-  background-position: -1180px -2918px;
+  background-position: -691px -6777px;
   width: 22px;
   height: 20px;
 }
 
-.recs-checklist-icon-active {
-  background-position: -691px -2922px;
+.recs-checklist-icon:hover {
+  background-position: -714px -6777px;
   width: 22px;
   height: 20px;
 }
 
 .menu-icon-help {
-  background-position: -714px -2922px;
+  background-position: -1180px -6782px;
   width: 20px;
   height: 20px;
 }
 
 .menu-icon-settings {
-  background-position: -401px -2977px;
+  background-position: -401px -6832px;
   width: 20px;
   height: 20px;
 }
 
 .tasks-head {
-  background-position: -401px -2998px;
+  background-position: -401px -6853px;
   width: 20px;
   height: 20px;
 }
 
-.tasks-head-active {
-  background-position: -401px -3019px;
+.tasks-head:hover {
+  background-position: -401px -6874px;
   width: 20px;
   height: 20px;
 }
 
 .tasks-icon-settings {
-  background-position: -287px -3028px;
+  background-position: -287px -6883px;
   width: 20px;
   height: 20px;
 }
 
 .recs-article-icon {
-  background-position: -308px -3028px;
+  background-position: -308px -6883px;
   width: 19px;
   height: 23px;
 }
 
-.recs-article-icon-active {
-  background-position: -328px -3028px;
+.recs-article-icon:hover {
+  background-position: -328px -6883px;
   width: 19px;
   height: 23px;
 }
 
 .statusbar-facebook {
-  background-position: -348px -3028px;
+  background-position: -348px -6883px;
   width: 16px;
   height: 16px;
 }
 
-.statusbar-facebook-active {
-  background-position: -365px -3028px;
+.statusbar-facebook:hover {
+  background-position: -365px -6883px;
   width: 16px;
   height: 16px;
 }
 
 .statusbar-foursquare {
-  background-position: -382px -3028px;
+  background-position: -382px -6883px;
   width: 16px;
   height: 16px;
 }
 
-.statusbar-foursquare-active {
-  background-position: -399px -3040px;
+.statusbar-foursquare:hover {
+  background-position: -399px -6895px;
   width: 16px;
   height: 16px;
 }
 
 .statusbar-twitter {
-  background-position: -416px -3043px;
+  background-position: -416px -6898px;
   width: 16px;
   height: 16px;
 }
 
-.statusbar-twitter-active {
-  background-position: -433px -3043px;
+.statusbar-twitter:hover {
+  background-position: -433px -6898px;
   width: 16px;
   height: 16px;
 }
 
 .statusbar-youtube {
-  background-position: -450px -3043px;
+  background-position: -450px -6898px;
   width: 16px;
   height: 16px;
 }
 
-.statusbar-youtube-active {
-  background-position: -467px -3043px;
+.statusbar-youtube:hover {
+  background-position: -467px -6898px;
   width: 16px;
   height: 16px;
 }
 
 .contactscustomers-blue-ribbon-left {
-  background-position: -484px -3043px;
+  background-position: -484px -6898px;
   width: 15px;
   height: 40px;
 }
 
 .contactscustomers-blue-ribbon-right {
-  background-position: -500px -3043px;
+  background-position: -500px -6898px;
   width: 15px;
   height: 40px;
 }
 
 .contactscustomers-gray-ribbon-left {
-  background-position: -516px -3043px;
+  background-position: -516px -6898px;
   width: 15px;
   height: 40px;
 }
 
 .contactscustomers-gray-ribbon-right {
-  background-position: -532px -3043px;
+  background-position: -532px -6898px;
   width: 15px;
   height: 40px;
 }
 
 .recs-tip-icon {
-  background-position: -548px -3043px;
+  background-position: -548px -6898px;
   width: 14px;
   height: 23px;
 }
 
-.recs-tip-icon-active {
-  background-position: -563px -3043px;
+.recs-tip-icon:hover {
+  background-position: -563px -6898px;
   width: 14px;
   height: 23px;
 }
 
 .statusbar-arrow {
-  background-position: -1031px -2715px;
+  background-position: -1031px -6570px;
   width: 14px;
   height: 9px;
 }
+
+Your HTML

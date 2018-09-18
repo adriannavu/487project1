@@ -77,55 +77,54 @@ p {
     z-index: 0;
   }
 
+  .menu-options {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    top: 5px;
+    left: 60%;
+  }
+
+  .menu-icon-help:hover {
+    transform: scale(1.1);
+  }
+
+  .menu-icon-settings:hover {
+    transform: scale(1.1);
+  }
+
   .menu h2 {
     font-weight: lighter;
     color: rgb(255, 255, 255);
-    margin-left: 5em;
     z-index: 1;
     top: 8px;
+    left: 10%;
   }
 
   .menu p {
     color: rgb(255, 255, 255);
-    top: 8px;
-    left: 53.5%;
-    z-index: 2;
+    top: -3px;
   }
 
   .menu-vertical-divider {
     background-color: rgb(28, 133, 216);
     position: relative;
+    display: inline-block;
     width: 1px;
     height: 30px;
-    z-index: 3;
-  }
-
-  .menu-vd1 {
-    top: -23px;
-    left: 82.9%;
+    margin: 0 10px 0 10px;
   }
 
   .menu-icon-help {
     position: relative;
-    top: -46px;
     width: 20px;
     height: 20px;
-    left: 84.1%;
-    z-index: 2;
-  }
-
-  .menu-vd2 {
-    top: -77px;
-    left: 86.9%;
   }
 
   .menu-icon-settings {
     position: relative;
-    top: -100px;
     width: 20px;
     height: 20px;
-    left: 88.1%;
-    z-index: 2;
   }
 
   .menu-container {
@@ -178,6 +177,7 @@ p {
   .menu-icon-container {
     position: relative;
     top: -171px;
+    z-index: 8;
   }
 
   .menu-icon-dashboard {
@@ -193,32 +193,27 @@ p {
   .menu-icon-messages {
     position: relative;
     left: 34.5%;
-    z-index: 8;
   }
 
   .menu-icon-promotions {
     position: relative;
     left: 37%;
-    z-index: 8;
   }
 
   .menu-icon-page-creator {
     position: relative;
     left: 40%;
-    z-index: 8;
   }
 
   .menu-icon-analytics {
     position: relative;
     left: 43.5%;
-    z-index: 8;
   }
 
   .menu-icon-shadow {
     position: relative;
     left: 29%;
     margin: 0 1.1% 0 1.1%;
-    z-index: 8;
   }
 
   .menu-marker {
@@ -243,7 +238,7 @@ p {
     margin: 15px auto 15px auto;
     display: block;
     top: -2px;
-    width: 99%;
+    width: 80%;
     height: 75px;
     z-index: -1;
   }
@@ -252,18 +247,19 @@ p {
     font-size: 36px;
     color: rgb(255, 255, 255);
     left: 2%;
-    top: 17px;
+    margin-right: 9%;
   }
 
   .search-bar {
     background-color: rgb(45, 181, 91);
     position: relative;
-    left: 71.5%;
-    top: -23px;
+    display: inline-block;
+    top: 20px;
     width: 260px;
     height: 35px;
     z-index: 0;
     border-radius: 4px;
+    margin-left: 44%;
   }
 
   .search-bar input[type=text] {
@@ -280,7 +276,15 @@ p {
     border-radius: 4px;
   }
 
-  .mglass {
+  .magnifying-glass {
+    position: relative;
+    display: inline-block;
+    left: 14.3em;
+    top: -27px;
+    z-index: 2;
+  }
+
+  .lens {
     position: relative;
     display: inline-block;
     background-color: #f4f4f4;
@@ -288,20 +292,15 @@ p {
     height: 13px;
     width: 13px;
     border: 3.1px solid #2498f4;
-    left: 89%;
-    top: -27px;
-    z-index: 2;
   }
 
-  .mglass-handle {
+  .handle {
     position: relative;
     display: inline-block;
     height: 3.5px;
     width: 7px;
+    left: -7px;
     background: #2498f4;
-    top: -27px;
-    left: 86.3%;
-    z-index: 2;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1035,6 +1034,29 @@ p {
 
     [class*="col-"] {
       width: 100%;
+    }
+
+    /* Dashboard */
+    .dashboard-container {
+      width: 100%;
+    }
+
+    .dashboard h1 {
+      top: 0.4em;
+    }
+
+    .search-bar {
+      width: 9.7em;
+      top: -1.6em;
+      margin-left: 57%;
+    }
+
+    .search-bar input[type=text] {
+      width: 7.9em;
+    }
+
+    .magnifying-glass {
+      left: 7.9em;
     }
 
     /* Analytics */
