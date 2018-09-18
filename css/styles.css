@@ -53,7 +53,7 @@ p {
 
   .grid-container>div {
     text-align: left;
-    border: 1px solid gray;
+    border: 1px solid rgb(238, 238, 238);
   }
 
   [class*="col-"] {
@@ -72,7 +72,7 @@ p {
 
     .grid-container>div {
       text-align: left;
-      border: 1px solid gray;
+      border: 1px solid rgb(238, 238, 238);
     }
 
     /* Menu */
@@ -386,7 +386,7 @@ p {
     }
 
     .tasks h1 {
-      padding: 15px 200px 15px 20px;
+      padding: 15px 58% 15px 20px;
       width: 80px;
     }
 
@@ -456,6 +456,54 @@ p {
     .recs {
       grid-row: 5/8;
       grid-column: 2/2;
+    }
+
+    .recs h1 {
+      padding: 15px 20px;
+    }
+
+    .recs-section {
+      border-bottom: 1px dotted rgb(238, 238, 238);
+      border-top: 1px dotted rgb(238, 238, 238);
+    }
+
+    .recs-section:hover {
+      filter: grayscale(100%);
+    }
+
+    .recs-article-icon {
+      position: relative;
+      margin: 0 15px;
+    }
+
+    .recs-checklist-icon {
+      position: relative;
+      margin: 0 13px;
+    }
+
+    .recs-tip-icon {
+      position: relative;
+      margin: 0 17px;
+    }
+
+    .recs-caption {
+      color: rgb(153, 153, 153);
+      display: inline-block;
+      position: relative;
+      padding-bottom: 10px;
+      width: 80%;
+    }
+
+    .recs-caption:hover {
+      filter: brightness(0%);
+    }
+
+    .recs p {
+      font-size: 10px;
+    }
+
+    .recs h2 {
+      font-size: 18px;
     }
 
     /* Analytics */
