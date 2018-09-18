@@ -48,7 +48,7 @@ p {
   .grid-container {
     display: grid;
     grid-template-columns: minmax(105px, 10%) minmax(355px, 30%) minmax(615px, 50%) minmax(105px, 10%);
-    grid-template-rows: 147px 120px 50px 300px 104px 271px 180px 160px 61px;
+    grid-template-rows: 147px 120px 50px 300px 104px 271px 180px 220px 100px;
     grid-template-areas:
       "menu menu menu menu""dash dash dash dash"". anno anno ."". task anlt ."". recs anlt ."". recs cocu ."". recs didy ."". prom prom .""stat stat stat stat";
   }
@@ -242,6 +242,7 @@ p {
     background-color: rgb(51, 204, 102);
     border-radius: 5px;
     margin: 15px auto 15px auto;
+    display: block;
     top: -2px;
     width: 99%;
     height: 75px;
@@ -558,10 +559,47 @@ p {
   }
 
   .analytics-bar-graph {
-    margin: 0 4% 0 4%;
+    margin: 77px 4%;
   }
 
-  .analytics-channels-referrals {
+  .analytics-divider {
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+    height: 240px;
+    top: -97px;
+  }
+
+  .analytics-vd {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.071;
+    position: relative;
+    height: 240px;
+  }
+
+  .analytics-vd-shade {
+    background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.06667) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.06667) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.06667) 0%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+    top: -240px;
+    width: 10px;
+    height: 240px;
+  }
+
+  .pie-charts {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    margin: 0 2%;
+    top: -100px;
+  }
+
+  .analytics-channels {
+    margin: 0 2% 0 2%;
+  }
+
+  .analytics-referrals {
     margin: 0 2% 0 2%;
   }
 
@@ -605,7 +643,7 @@ p {
     left: -15px;
   }
 
-  #rectangle {
+  .rectangle {
     background-color: rgb(35, 148, 238);
     position: absolute;
     display: inline-block;
@@ -648,6 +686,12 @@ p {
     z-index: 1;
   }
 
+  .contactscustomers-orange-graph-line {
+    position: absolute;
+    top: 31px;
+    z-index: 1;
+  }
+
   .contactscustomers-shaded-graph {
     position: absolute;
     top: 31px;
@@ -666,14 +710,83 @@ p {
     grid-area: didy;
   }
 
-  .left-arrow {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+  .didyouknow-container {
+    border-radius: 4px;
+    position: relative;
+    display: block;
+    margin: 3% auto;
+    top: 0px;
+    width: 94%;
+    height: 82%;
+    z-index: -1;
   }
 
-  .right-arrow {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  .didyouknow-content {
+    display: inline-block;
+    position: relative;
+    top: 36px;
+  }
+
+  .didyouknow h1 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 0 10%;
+  }
+
+  .didyouknow p {
+    color: rgb(255, 255, 255);
+    padding: 0 10%;
+  }
+
+  .button {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    width: 23px;
+    height: 50px;
+    top: 12px;
+  }
+
+  .button-left {
+    display: inline-block;
+    position: absolute;
+  }
+
+  .button-right {
+    display: inline-block;
+    position: absolute;
+    left: 97%;
+  }
+
+  .didyouknow-left-semicircle {
+    position: relative;
+  }
+
+  .didyouknow-right-semicircle {
+    position: relative;
+  }
+
+  .arrow {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid orange;
+    border-right: 3px solid orange;
+    margin: 10px;
+  }
+
+  .arrow-left {
+    top: -38px;
+    left: -7px;
+    transform: translate3d(0, -50%, 0) rotate(-135deg);
+  }
+
+  .arrow-right {
+    top: -38px;
+    left: -2px;
+    transform: translate3d(0, -50%, 0) rotate(45deg);
   }
 
   /* Promo */
@@ -681,6 +794,37 @@ p {
     grid-row: 8/8;
     grid-column: 2/4;
     grid-area: prom;
+    background-color: rgb(36, 152, 244);
+  }
+
+  .promo-ad {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.45);
+    width: 280px;
+    height: 160px;
+    border-radius: 5px;
+    top: 30px;
+  }
+
+  .promo-left-caption {
+    position: relative;
+    display: inline-block;
+    top: -99px;
+    left: 150px;
+    width: 100px;
+  }
+
+  .promo-left-caption h1 {
+    font-size: 20px;
+    color: rgb(51, 204, 102);
+    text-align: right;
+  }
+
+  .promo-left-caption p {
+    color: rgb(102, 102, 102);
+    text-align: right;
   }
 
   /* Statusbar */
@@ -695,14 +839,14 @@ p {
     .grid-container {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: auto;
+      grid-template-rows: 147px 105px 100px 301px 315px 604px 180px 160px 61px;
       grid-template-areas:
         "menu menu menu menu"
         "dash dash dash dash"
         "anno anno anno anno"
         "task task task task"
-        "anlt anlt anlt anlt"
         "recs recs recs recs"
+        "anlt anlt anlt anlt"
         "cocu cocu cocu cocu"
         "didy didy didy didy"
         "prom prom prom prom"
@@ -717,6 +861,11 @@ p {
 
     [class*="col-"] {
       width: 100%;
+    }
+
+    /* Analytics */
+    .analytics-divider {
+      display: none;
     }
   }
 }
