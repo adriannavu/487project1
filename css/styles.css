@@ -671,7 +671,12 @@ p {
     display: inline-block;
     width: 100px;
     height: 24px;
-    margin: 4px;
+    margin: 0 8px;
+  }
+
+  /* Twitter size is different from others */
+  .twitter-bkgd {
+    width: 80px;
   }
 
   /* Checkbox outer container */
