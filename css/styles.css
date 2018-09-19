@@ -61,7 +61,7 @@ p {
     text-align: left;
   }
 
-  /* Menu */
+  /************************** Menu **************************/
   .menu {
     grid-row: 1/1;
     grid-column: 1/5;
@@ -134,7 +134,7 @@ p {
     cursor: pointer;
   }
 
-  /* Styling of social stream */
+  /* Styling of "social stream" */
   .menu h2 {
     font-weight: lighter;
     color: rgb(255, 255, 255);
@@ -249,7 +249,7 @@ p {
     top: -1px;
   }
 
-  /* Dashboard */
+  /************************** Dashboard **************************/
   .dashboard {
     grid-row: 2/2;
     grid-column: 2/4;
@@ -311,6 +311,7 @@ p {
     z-index: 2;
   }
 
+  /* Style and position magnifying glass lens */
   .lens {
     position: relative;
     display: inline-block;
@@ -321,6 +322,7 @@ p {
     border: 3.1px solid #2498f4;
   }
 
+  /* Style and position magnifying glass handle */
   .handle {
     position: relative;
     display: inline-block;
@@ -334,18 +336,6 @@ p {
     -o-transform: rotate(45deg);
   }
 
-  /* Background Content */
-  /* .bkgd-content {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    top: 260px;
-    left: 9%;
-    width: 82%;
-    min-width: 1004px;
-    height: 1125px;
-    z-index: -1;
-  } */
   /* Announcements */
   .announcements {
     grid-row: 3/3;
@@ -563,11 +553,15 @@ p {
     width: 100%;
   }
 
-  /* Placement of dropdown  */
+  /* Placement and styling of dropdown  */
   .dropdown {
     position: absolute;
     display: inline-block;
-    padding-left: 23%;
+    left: 60%;
+    width: 181px;
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    cursor: pointer;
   }
 
   /*  Dropdown button styling */
@@ -575,9 +569,24 @@ p {
     background-color: white;
     padding: 8px;
     font-size: 14px;
-    border: 2px solid rgb(238, 238, 238);
-    border-radius: 5px;
+    border: 1px solid rgb(238, 238, 238);
     cursor: pointer;
+  }
+
+  /* Position and style dropdown arrow */
+  .dropdown-arrow {
+    position: relative;
+    display: inline-block;
+    left: 10px;
+    top: -2px;
+    width: 7px;
+    height: 7px;
+    border: solid orange;
+    border-radius: 2px;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   /* Other dropdown options containers */
@@ -1355,6 +1364,10 @@ p {
     }
 
     /* Analytics */
+    .dropdown {
+      left: 23%;
+    }
+
     .analytics-divider {
       display: none;
     }
