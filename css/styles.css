@@ -311,15 +311,15 @@ p {
     text-transform: uppercase;
     color: rgb(254, 127, 19);
     position: relative;
-    padding: 15px;
+    padding: 0 15px 0 15px;
+    top: -21px;
   }
 
   .announcements-divider {
     position: relative;
     display: inline-block;
     background-color: rgb(238, 238, 238);
-    left: 159px;
-    top: -48px;
+    width: 1px;
     height: 50px;
   }
 
@@ -329,17 +329,17 @@ p {
     text-align: left;
     position: relative;
     width: 650px;
+    top: -1.5em;
+    margin: 0 8% 0 1%;
   }
 
   .announcements-buttons {
     position: relative;
     display: inline-block;
+    top: -0.9em;
+    margin: 1%;
   }
 
-  /* .announcements-vd2 {
-      height: 50px;
-      left: 92%;
-    } */
   .announcements-left-button {
     position: relative;
   }
@@ -1057,6 +1057,28 @@ p {
 
     .magnifying-glass {
       left: 7.9em;
+    }
+
+    /* Announcements */
+    .announcements-title {
+      text-align: center;
+      display: block;
+      top: 0.5em;
+    }
+
+    .announcements-desc {
+      display: inline-block;
+      margin: 2.5em 0.5em 1em 1.5em;
+      width: 70%;
+    }
+
+    .announcements-divider {
+      top: -1em;
+    }
+
+    .announcements-buttons {
+      top: -2em;
+      margin: 3%;
     }
 
     /* Analytics */
