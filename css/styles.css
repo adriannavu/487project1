@@ -52,7 +52,7 @@ p {
   .grid-container {
     display: grid;
     grid-template-columns: minmax(105px, 10%) minmax(355px, 30%) minmax(615px, 50%) minmax(105px, 10%);
-    grid-template-rows: 147px 120px 50px 300px 104px 271px 180px 220px 100px;
+    grid-template-rows: 147px 120px 50px 302px 104px 271px 180px 220px 100px;
     grid-template-areas:
       "menu menu menu menu""dash dash dash dash"". anno anno ."". task anlt ."". recs anlt ."". recs cocu ."". recs didy ."". prom prom .""stat stat stat stat";
   }
@@ -203,7 +203,7 @@ p {
 
   /* Applies margin to Dashboard icon, Customers icon, Messages icon, Promotions icon, Page Creator icon, and Analytics icon */
   .nav {
-    margin: 0 1em 0 1em;
+    margin: 0 1em;
   }
 
   .menu-icon-dashboard:hover {
@@ -246,7 +246,7 @@ p {
     width: 40px;
     height: 10px;
     z-index: 3;
-    top: -3px;
+    top: -1px;
   }
 
   /* Dashboard */
@@ -824,7 +824,7 @@ p {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.45);
-    margin: 6%;
+    margin: 2.5em;
     display: inline-block;
   }
 
@@ -926,7 +926,7 @@ p {
   .didyouknow-content {
     display: inline-block;
     position: relative;
-    top: 36px;
+    top: 20%;
   }
 
   .didyouknow h1 {
@@ -1131,8 +1131,14 @@ p {
   }
 
   .statusbar p {
-    top: -10px;
+    top: -1em;
     margin: 0 1%;
+  }
+
+  .statusbar h1 {
+    font-size: 14px;
+    top: -1.5em;
+    margin: 0.5em;
   }
 
   /* Short vertical line in between "Tutorials", "Support", and "Blog" */
@@ -1142,7 +1148,7 @@ p {
     display: inline-block;
     width: 1px;
     height: 20px;
-    top: -6px;
+    top: -0.5em;
   }
 
   /* Long vertical line to divide statusbar into 4 sections */
@@ -1152,13 +1158,21 @@ p {
     display: inline-block;
     height: 51px;
     width: 1px;
-    top: 8px;
+  }
+
+  /* Includes Avatar, arrow, logout, social media icons */
+  .statusbar-right-side {
+    position: relative;
+    display: inline-block;
+    top: 0.5em;
+    height: 3em;
+    width: 31em;
   }
 
   .statusbar-arrow {
     position: relative;
     display: inline-block;
-    top: -10px;
+    top: -1.5em;
     left: 260px;
     cursor: pointer;
   }
@@ -1184,6 +1198,16 @@ p {
     margin-right: 10px;
   }
 
+  /* Positioning applies to four social media icons */
+  .statusbar-icon {
+    top: -1em;
+    position: relative;
+  }
+
+  .statusbar-icon:hover {
+    cursor: pointer;
+  }
+
   /* Gray border that goes outside avatar */
   .avatar-container {
     background-color: rgb(255, 255, 255);
@@ -1192,6 +1216,8 @@ p {
     display: inline-block;
     width: 36px;
     height: 36px;
+    top: -0.5em;
+    ;
   }
 
   .statusbar-avatar {
@@ -1221,7 +1247,7 @@ p {
     .grid-container {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 147px 105px 100px 275px 315px 604px 180px 160px 61px;
+      grid-template-rows: 147px 105px 100px 275px 315px 530px 550px 170px 540px 162px;
       grid-template-areas:
         "menu menu menu menu"
         "dash dash dash dash"
@@ -1255,10 +1281,20 @@ p {
 
     .menu-icon-container {
       width: 100%;
+      margin: 0 1.5%;
     }
 
     .nav {
-      margin: 0 0.1em 0 0.1em;
+      margin: 0;
+    }
+
+    .menu-icon-shadow {
+      margin: 0;
+      width: 53px;
+    }
+
+    .menu-marker {
+      left: 0.5em;
     }
 
     /* Dashboard */
@@ -1334,6 +1370,42 @@ p {
     /* Contacts & Customers */
     .flex-container {
       flex-wrap: wrap;
+    }
+
+    /* Did You Know */
+    .button-right {
+      left: 94%;
+    }
+
+    /* Statusbar */
+    .statusbar-container {
+      top: 171.5em;
+      height: 8.5em;
+    }
+
+    .statusbar-bkgd {
+      height: 8.5em;
+    }
+
+    .statusbar-top {
+      position: relative;
+    }
+
+    .statusbar p {
+      margin: 0.2em 2em 0.2em 2em;
+      top: 0;
+    }
+
+    .spacer {
+      top: 0;
+    }
+
+    .statdiv1 {
+      display: none;
+    }
+
+    .statdiv2 {
+      display: none;
     }
   }
 }
