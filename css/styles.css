@@ -688,17 +688,38 @@ p {
     position: absolute;
   }
 
-  .white {
+  .option {
     color: white;
     font-size: 13px;
     position: absolute;
     text-align: center;
     width: 100%;
+    border-radius: 4px;
+    margin: 0.2em 0.5em;
+  }
+
+  .analytics-facebook {
     background-color: rgb(17, 69, 112);
     width: 70px;
     height: 16px;
-    border-radius: 4px;
-    margin: 0.2em 0.5em;
+  }
+
+  .analytics-twitter {
+    background-color: rgb(34, 152, 244);
+    width: 54px;
+    height: 16px;
+  }
+
+  .analytics-foursquare {
+    background-color: rgb(58, 89, 155);
+    width: 79px;
+    height: 16px;
+  }
+
+  .analytics-google {
+    background-color: rgb(49, 204, 102);
+    width: 62px;
+    height: 16px;
   }
 
   /* Contacts & Customers */
