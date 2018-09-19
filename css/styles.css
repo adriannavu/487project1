@@ -90,25 +90,16 @@ p {
     left: 60%;
   }
 
-  .menu-icon-help:hover {
-    transform: scale(1.1);
-  }
-
-  .menu-icon-settings:hover {
-    transform: scale(1.1);
-  }
-
-  .menu h2 {
-    font-weight: lighter;
-    color: rgb(255, 255, 255);
-    z-index: 1;
-    top: 3px;
-    left: 10%;
-  }
-
+  /* Styling of MINI of Raleigh */
   .menu p {
     color: rgb(255, 255, 255);
     top: -3px;
+  }
+
+  /* MINI of Raleigh grows larger when hovered over */
+  .menu p:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
 
   /*  Divider between MINI of Raleigh, Settings icon, and Help icon*/
@@ -131,6 +122,25 @@ p {
     position: relative;
     width: 20px;
     height: 20px;
+  }
+
+  .menu-icon-help:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .menu-icon-settings:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  /* Styling of social stream */
+  .menu h2 {
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    top: 3px;
+    left: 10%;
   }
 
   /* Groups elements in bottom 80% of menu */
@@ -181,6 +191,7 @@ p {
     z-index: 6;
   }
 
+  /* Groups Dashboard icon, Customers icon, Messages icon, Promotions icon, Page Creator icon, and Analytics icon */
   .menu-icon-container {
     position: relative;
     top: -171px;
@@ -190,10 +201,33 @@ p {
     margin: 0 auto 0 auto;
   }
 
-  /* Groups Dashboard icon, Customers icon, Messages icon, Promotions icon, Page Creator icon, and Analytics icon */
+  /* Applies margin to Dashboard icon, Customers icon, Messages icon, Promotions icon, Page Creator icon, and Analytics icon */
   .nav {
     margin: 0 1em 0 1em;
-    position: relative;
+  }
+
+  .menu-icon-dashboard:hover {
+    cursor: pointer;
+  }
+
+  .menu-icon-customers:hover {
+    cursor: pointer;
+  }
+
+  .menu-icon-messages:hover {
+    cursor: pointer;
+  }
+
+  .menu-icon-promotions:hover {
+    cursor: pointer;
+  }
+
+  .menu-icon-page-creator:hover {
+    cursor: pointer;
+  }
+
+  .menu-icon-analytics:hover {
+    cursor: pointer;
   }
 
   /* Groups shadows beneath menu container icons */
@@ -361,6 +395,7 @@ p {
 
   .announcements-left-button:hover {
     transform: scale(1.1);
+    cursor: pointer;
   }
 
   .announcements-right-button {
@@ -369,6 +404,7 @@ p {
 
   .announcements-right-button:hover {
     transform: scale(1.1);
+    cursor: pointer;
   }
 
   /* Tasks */
@@ -395,6 +431,7 @@ p {
   /* Makes every div in Tasks gray if hovered over */
   .tasks>div:hover {
     filter: grayscale(100%);
+    cursor: pointer;
   }
 
   /* Numbers each task */
@@ -464,6 +501,7 @@ p {
     width: 100%;
   }
 
+  /* Groups an icon with a recommendation caption */
   .recs-section {
     border-bottom: 1px dotted rgb(238, 238, 238);
     border-top: 1px dotted rgb(238, 238, 238);
@@ -472,6 +510,7 @@ p {
   /* Turn each icon gray when hovered over */
   .recs-section:hover {
     filter: grayscale(100%);
+    cursor: pointer;
   }
 
   .recs-article-icon {
@@ -647,6 +686,10 @@ p {
     border-radius: 1px;
   }
 
+  .checkbox-outer:hover {
+    cursor: pointer;
+  }
+
   /* Checkbox inner container */
   .checkbox-container {
     display: inline-block;
@@ -788,6 +831,7 @@ p {
   /* Make every element in card gray when hovered over */
   .card:hover {
     filter: grayscale(100%);
+    cursor: pointer;
   }
 
   .contactscustomers-green-avatar {
@@ -897,7 +941,8 @@ p {
     padding: 0 10%;
   }
 
-  .button {
+  /* Positions button */
+  .slide-button {
     cursor: pointer;
     position: absolute;
     display: inline-block;
@@ -906,15 +951,29 @@ p {
     top: 12px;
   }
 
+  .button:hover {
+    cursor: pointer;
+  }
+
+  /* Groups left arrow and left semicircle */
   .button-left {
     display: inline-block;
     position: absolute;
   }
 
+  .button-left:hover {
+    cursor: pointer !IMPORTANT;
+  }
+
+  /* Groups right arrow and right semicircle */
   .button-right {
     display: inline-block;
     position: absolute;
     left: 97%;
+  }
+
+  .button-right:hover {
+    cursor: pointer;
   }
 
   .didyouknow-left-semicircle {
@@ -1251,6 +1310,10 @@ p {
 
     .announcements-buttons {
       top: -2em;
+    }
+
+    .announcements-buttons:hover {
+      cursor: pointer;
     }
 
     /* Tasks */
