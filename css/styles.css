@@ -581,6 +581,7 @@ p {
     position: relative;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     top: -1.5em;
   }
 
@@ -589,11 +590,22 @@ p {
     display: inline-block;
     width: 100px;
     height: 24px;
-    background-color: gray;
     margin: 4px;
   }
 
-  /* Checkbox container*/
+  /* Checkbox outer border */
+  .checkbox-outer {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+  }
+
+  /* Checkbox container */
   .container {
     display: inline-block;
     position: relative;
@@ -617,15 +629,27 @@ p {
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 16px;
-    width: 16px;
+    top: -2px;
+    left: 2px;
+    height: 12px;
+    width: 12px;
     background-image:
       radial-gradient(circle at bottom left,
       white,
       #ccc);
     border: 1px solid #bbb;
+    border-radius: 1px;
+  }
+
+  /* When the checkbox is checked, add a white background */
+  .container input:checked~.checkmark {
+    background-image: radial-gradient(circle at bottom left,
+      white,
+      white);
+    ;
+    border: 3px solid white;
+    top: -4px;
+    left: 0px;
     border-radius: 1px;
   }
 
@@ -643,8 +667,8 @@ p {
 
   /* Style the checkmark/indicator */
   .container .checkmark:after {
-    left: 7px;
-    top: -8px;
+    left: 5px;
+    top: -10px;
     width: 6px;
     height: 20px;
     border: solid orange;
@@ -674,6 +698,7 @@ p {
     width: 70px;
     height: 16px;
     border-radius: 4px;
+    margin: 0.2em 0.5em;
   }
 
   /* Contacts & Customers */
