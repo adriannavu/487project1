@@ -961,19 +961,11 @@ p {
     position: absolute;
   }
 
-  .button-left:hover {
-    cursor: pointer !IMPORTANT;
-  }
-
   /* Groups right arrow and right semicircle */
   .button-right {
     display: inline-block;
     position: absolute;
     left: 97%;
-  }
-
-  .button-right:hover {
-    cursor: pointer;
   }
 
   .didyouknow-left-semicircle {
